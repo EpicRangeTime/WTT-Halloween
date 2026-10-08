@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTT_Halloween", "WTT_Halloween\WTT_Halloween.csproj", "{BCE665BC-FDE3-4D88-A284-1D576DEF825C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTTHalloweenClient", "WTTHalloweenClient\WTTHalloweenClient.csproj", "{0B71582B-BB92-4BEE-BA39-C2CC52B55992}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE665BC-FDE3-4D88-A284-1D576DEF825C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE665BC-FDE3-4D88-A284-1D576DEF825C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE665BC-FDE3-4D88-A284-1D576DEF825C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE665BC-FDE3-4D88-A284-1D576DEF825C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B71582B-BB92-4BEE-BA39-C2CC52B55992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B71582B-BB92-4BEE-BA39-C2CC52B55992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B71582B-BB92-4BEE-BA39-C2CC52B55992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B71582B-BB92-4BEE-BA39-C2CC52B55992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

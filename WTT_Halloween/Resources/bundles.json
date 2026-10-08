@@ -1,0 +1,44 @@
+{
+  "manifest": [
+    {
+      "key": "wearables/facecovers/mask_3face.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_fans.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_hands.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_holes.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_many_eyes.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_smooth.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_spikes.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_split.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_stitches.bundle",
+      "dependencyKeys": []
+    },
+    {
+      "key": "wearables/facecovers/mask_wires.bundle",
+      "dependencyKeys": []
+    }
+  ]
+}

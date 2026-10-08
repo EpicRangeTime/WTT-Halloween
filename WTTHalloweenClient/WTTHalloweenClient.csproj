@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>WTTHalloweenClient</AssemblyName>
+        <!-- Project: SPT 4.1/Server Modding/WTT-Halloween/WTTHalloweenClient -->
+        <SptRoot>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../../../'))</SptRoot>
+        <ClientPluginsDirectory>$(SptRoot)BepInEx/plugins/</ClientPluginsDirectory>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="BepInEx">
+            <HintPath>$(SptRoot)BepInEx/core/BepInEx.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="0Harmony">
+            <HintPath>$(SptRoot)BepInEx/core/0Harmony.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>$(SptRoot)EscapeFromTarkov_Data/Managed/UnityEngine.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(SptRoot)EscapeFromTarkov_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+            <HintPath>$(SptRoot)EscapeFromTarkov_Data/Managed/UnityEngine.AnimationModule.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec WorkingDirectory="$(ProjectDir)" Command="@echo off&#xA;if not exist &quot;..\..\..\BepInEx\plugins&quot; mkdir &quot;..\..\..\BepInEx\plugins&quot;&#xA;if errorlevel 1 exit /b 1&#xA;copy /Y &quot;$(TargetPath)&quot; &quot;..\..\..\BepInEx\plugins\$(TargetFileName)&quot;&#xA;if errorlevel 1 exit /b 1&#xA;echo [PostBuild] Copied $(TargetFileName) to BepInEx\plugins" />
+    </Target>
+</Project>
